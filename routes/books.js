@@ -9,8 +9,8 @@ router.get('/:id', (req, res, next) => bookController.getBook(req, res, next));
 
 router.post('/new', (req, res, next) => bookController.addBook(req, res, next));
 
-router.put('/update/:id', (req, res, next) => bookController.updateBook(req, res, next));
+router.put('/:id', (req, res, next) => bookController.updateBook(req, res, next));
 
-router.delete('/delete/:id', (req, res, next) => bookController.deleteBook(req, res, next));
+router.delete('/:id', (req, res, next) => bookController.deleteBook(req, res, next));
 
 module.exports = router;
